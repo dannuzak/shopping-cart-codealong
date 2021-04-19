@@ -15,7 +15,7 @@ export const CartItem = ({ product }) => {
       </div>
 
       <span className="actions">
-        <button type="button" onClick={() => { }}>-</button>
+        <button type="button" onClick={() => dispatch(cart.actions.removeItem(product))}>-</button>
         {/* This is adding functionality to the + sign once there is an existing item in the cart */}
         <button type="button" onClick={() => dispatch(cart.actions.addItem(product))}>+</button>
       </span>
