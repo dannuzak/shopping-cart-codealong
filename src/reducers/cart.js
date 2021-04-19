@@ -5,5 +5,9 @@ export const cart = createSlice({
     initialState: {
         items: []
     },
-    reducers:{}
+    reducers:{
+        addItem: (state, action) => {
+            console.log(action)
+        }
+    }
 })
